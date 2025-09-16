@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safer-cast-api"
+version = "0.0.0"
+description = "PyGeoAPI service that wraps safercast implemented retrievers"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name="Tommaso Redaelli", email="tommaso.redaelli@gecosistema.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "python-dotenv",
+    "pygeoapi"
+]
+
+[project.optional-dependencies]
+py311gdal = [
+  "gdal @ https://github.com/cgohlke/geospatial-wheels/releases/download/v2025.1.20/GDAL-3.10.1-cp311-cp311-win_amd64.whl",
+  "numpy",
+  "numba",
+  "gdal2numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/PMG-t/safer-cast-api"
+Repository = "https://github.com/PMG-t/safer-cast-api"
+Issues = "https://github.com/PMG-t/safer-cast-api/issues"
