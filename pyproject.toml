@@ -30,6 +30,12 @@ py311gdal = [
   "numba",
   "gdal2numpy",
 ]
+arpav = [
+    "process-arpav-retriever[pygeoapi] @ git+https://github.com/SaferPlaces2023/process-arpav-retriever.git"
+]
+dpc = [
+    "dpc-retriever[pygeoapi] @ git+https://github.com/SaferPlaces2023/dpc-retriever.git"
+]
 
 [project.urls]
 Homepage = "https://github.com/PMG-t/safer-cast-api"
